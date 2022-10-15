@@ -1,0 +1,42 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Num 1</p>
+    <input id="num1" type="number" placeholder="Enter a number here">
+    <p>Num 2</p>
+    <input id="num2" type="number" placeholder="Enter a number here">
+    <p id="out">show output here</p>
+    <button onclick="SquareNumber()">Multiply & Expnonent</button>
+</body>
+</html>
+
+<script>
+       
+       function SquareNumber() {
+        var num1 = document.querySelector("#num1").value;
+       var num2 = document.querySelector("#num2").value;
+       alert(num1*num2)
+       var x = num1*num2;
+       
+        result = 1;
+       for(var i=0; i<num2; i++) {
+           result = num1*result;
+           
+           
+       }
+    
+        document.querySelector("#out").innerText="Exponent is "+result
+       }
+
+       
+       
+     
+
+</script>

@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="gender" id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">M</option>
+        <option value="female">F</option>
+    </select>
+     <input id="age" type="number"placeholder="enter your age here" value="">
+     <button onclick="marriage()">Submit</button>
+
+</body>
+</html>
+
+<script>
+    function marriage(){
+        var gender = document.getElementById("gender").value;
+        var  age = document.getElementById("age").value;
+    if(gender=="male" && age>22) {
+        alert(" he can marry")
+    }
+    else if(gender=="female" && age>18) {
+       alert(" she can marry")
+}
+else if(gender=="male" && age<22) {
+        alert("he can not marry")
+    }
+    else if(gender=="female" && age<18) {
+       alert(" she can not marry")
+    }
+    else if(age<=0 && gender=="male" || age<=0 && gender=="female" ) {
+        alert("enter correct age")
+    }
+     }
+</script>
+    
