@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Calculator</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: teal;
+      }
+
+      #calculator {
+        height: 470px;
+width: 400px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+margin: auto;
+padding: 10px;
+ border-radius: 15px;
+      }
+
+      #input {
+        height: 15%;
+width: 342px;
+
+margin: 26px;
+
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+border-radius: 15px;   
+      }
+
+      #keyboard {
+        height: 300px;
+  width: 345px;
+
+  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(40px);
+  
+display: grid;
+margin: auto;
+border-radius: 15px;
+justify-content: center;
+justify-items: center;
+
+
+
+}
+
+#keyboard>div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  height: 70px;
+width: 70px;
+  gap: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  border-radius: 50px;
+}
+
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+#red {
+  background-color: red;
+}
+
+#keyboard > div:hover {
+        background-color: blueviolet;
+        cursor: pointer;
+      }
+      
+      #input:hover {
+        background-color: teal;
+        cursor: pointer;
+      }
+
+      /* use grid to acheive the layout */
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculator</h1>
+    <div id="calculator">
+      <div id="input"></div>
+      <div id="keyboard"><div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="black">+</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="black">-</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div class="black">x</div>
+      <div id="red">C</div>
+      <div>0</div>
+      <div>=</div>
+      <div>/</div></div>
+    </div>
+  </body>
+</html>
